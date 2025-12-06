@@ -1,0 +1,133 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 40px; 
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: black;
+}
+
+.contact h3 {
+    color: #000F38;
+    font-weight: 600; 
+    font-size: 32px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.contact-col p {
+    max-width: 450px;
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+    color: #666; 
+}
+
+.contact-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; 
+}
+
+.contact-col ul li svg {
+    width: 25px;
+    min-width: 25px; 
+    margin-right: 15px; 
+    color: rgb(3, 19, 94);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact form input, 
+.contact form textarea {
+    display: block;
+    width: 100%;
+    background: #EBECFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact form textarea {
+    min-height: 100px; 
+    resize: vertical; 
+}
+
+.contact form button {
+    background:linear-gradient(to right, #575757, #ff6969);
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    width: 130px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.8);
+    transition: ease-in-out 0.9s; 
+}
+
+.contact form button:hover {
+    border-radius: 40px;
+    width: 190px;
+    transition: ease-in-out 0.4s;
+}
+
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-col {
+        flex-basis: 100%;
+    }
+    
+    .contact h3 {
+        font-size: 28px;
+    }
+}
+
+
+/* --------------------media query------------------ */
+
+@media(max-width:700px){
+    .contact{
+        display: block;
+    }
+    .contact-col{
+        padding: 20px;
+    }
+}

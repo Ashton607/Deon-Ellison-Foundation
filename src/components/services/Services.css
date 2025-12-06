@@ -1,0 +1,95 @@
+.services{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service{
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.service:hover img{
+    transform: scale(1.05); 
+}
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,15,152,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: all 0.4s ease-in-out; 
+}
+
+.caption img{
+    width: 60px;
+    margin-bottom: 10px;
+    transform: scale(0); 
+    transition: transform 0.3s ease-in-out 0.2s; 
+}
+
+.caption h3,
+.caption p{
+    transform: translateY(20px); 
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0.3s; 
+}
+
+.service:hover .caption{
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.service:hover .caption img{
+    transform: scale(1); 
+}
+
+.service:hover .caption h3,
+.service:hover .caption p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* --------------------media query------------------ */
+
+@media(max-width:650px){
+    .services{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .service{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    
+    
+    .caption{
+        opacity: 0.8; 
+    }
+    
+    .service:hover .caption{
+        opacity: 1;
+    }
+}
