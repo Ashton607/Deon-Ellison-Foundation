@@ -1,6 +1,6 @@
 # React + Vite
 
-<h1>A responsive informational website built for the Deon Ellison Foundation to showcase their mission, services, community work, gallery, and contact details. Designed with React and Vite, featuring smooth scroll navigation, mobile optimization, and a clean modern UI.</h1>
+<h1>A responsive informational website built for a client to showcase their mission, services, community work, gallery, and contact details. Designed with React and Vite, featuring smooth scroll navigation, mobile optimization, and a clean modern UI.</h1>
 
 <h2>Technologies Used/Frontend</h2>
 <ul>
